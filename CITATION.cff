@@ -8,3 +8,5 @@ authors:
 year: 2026
 license: MIT
 abstract: "A reproducible Python/FastAPI vs Go benchmark using production-inspired POS backend workloads."
+repository-code: "https://github.com/ferhatsli/python-vs-go-pos-benchmark"
+url: "https://github.com/ferhatsli/python-vs-go-pos-benchmark"

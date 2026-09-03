@@ -61,24 +61,24 @@ The old benchmark development history is therefore not required for the public r
 
 ## External publication status
 
-Live publication is currently blocked by missing authenticated publishing access on this host:
+GitHub publication is live and verified. Medium and LinkedIn remain pending because they require an authenticated browser publishing flow and must use verified live URLs rather than guessed links.
 
-- GitHub CLI is not installed.
-- No Git credential helper / GitHub credential is configured.
-- The connected Chrome DevTools server probes successfully, but page-list calls time out, so an authenticated browser publication flow is not currently usable.
+Verified GitHub URL:
 
-No repository URL, Medium URL, or LinkedIn URL will be guessed. Live URLs must be recorded only after successful publication and verification.
+```text
+https://github.com/ferhatsli/python-vs-go-pos-benchmark
+```
 
 ## GitHub release
 
 - [x] Fresh sanitized public Git history created locally
-- [ ] Public repository name: `python-vs-go-pos-benchmark`
-- [ ] Description configured
-- [ ] Topics configured
-- [ ] MIT license detected on live GitHub
+- [x] Public repository name: `python-vs-go-pos-benchmark`
+- [x] Description configured
+- [x] Topics configured
+- [x] MIT license detected on live GitHub
 - [ ] Social preview uploaded (1280×640)
-- [ ] Live README images and relative links verified
-- [ ] Live GitHub URL recorded
+- [x] Live README images and relative links verified through the GitHub README HTML/API surface
+- [x] Live GitHub URL recorded
 
 ## Medium release
 
@@ -103,4 +103,14 @@ No repository URL, Medium URL, or LinkedIn URL will be guessed. Live URLs must b
 
 ## Verification log
 
-Live publication URLs and post-publication checks will be recorded here once authenticated publishing access is available.
+### 2026-09-03 — GitHub live verification
+
+```text
+Repository: https://github.com/ferhatsli/python-vs-go-pos-benchmark
+Visibility: PUBLIC
+Default branch: main
+License: MIT
+Topics: backend, benchmark, fastapi, go, k6, performance, pos, postgresql, python
+```
+
+The GitHub README HTML/API response references the committed hero, CARD, Dashboard, Worker, and architecture assets. The dedicated 1280×640 social-preview PNG is committed at `assets/hero/github-social-preview.png`; uploading it in repository Settings remains the only incomplete GitHub presentation step.
