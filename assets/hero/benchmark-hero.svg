@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<title>Python/FastAPI vs Go — POS backend benchmark</title>
+<desc>A dark technical hero for a production-inspired POS backend benchmark spanning 500 to 50,000 devices.</desc>
+<metadata>publication_identity=track-a-python-vs-go</metadata>
+<rect width="1400" height="760" fill="#0B1117"/>
+<rect x="70" y="80" width="250" height="10" rx="5" fill="#4B8BBE"/>
+<rect x="320" y="80" width="160" height="10" rx="5" fill="#00ADD8"/>
+<text x="70.0" y="178.0" fill="#4B8BBE" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">PYTHON / FASTAPI</text>
+<text x="70.0" y="255.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700">vs</text>
+<text x="70.0" y="342.0" fill="#00ADD8" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="700">GO</text>
+<text x="70.0" y="460.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="700">POS BACKEND BENCHMARK</text>
+<text x="70.0" y="515.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400">production-inspired workloads · frozen Track A</text>
+<rect x="810.0" y="155.0" width="500.0" height="390.0" rx="18" fill="#111B25"/>
+<text x="850.0" y="225.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="700">500 → 50,000</text>
+<text x="850.0" y="270.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">devices</text>
+<text x="850.0" y="350.0" fill="#4DD4AC" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Same PostgreSQL</text>
+<text x="850.0" y="392.0" fill="#4DD4AC" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Same datasets</text>
+<text x="850.0" y="434.0" fill="#4DD4AC" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Same correctness gates</text>
+<text x="850.0" y="505.0" fill="#FFD43B" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">EVIDENCE &gt; ASSUMPTIONS</text>
+<text x="70.0" y="660.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Track A decision: EVALUATE_BROADER_GO_MIGRATION</text>
+</svg>

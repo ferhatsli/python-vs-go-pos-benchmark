@@ -1,0 +1,38 @@
+version: 1
+workload: W7
+name: command_lifecycle
+endpoint:
+  method: MULTI
+  path: /api/v1/device/commands
+steps:
+  - GET /api/v1/device/commands/pending
+  - POST /api/v1/device/commands/{command_id}/acknowledge
+  - POST /api/v1/device/commands/{command_id}/result
+transaction:
+  commit_count: 1
+  boundary: each_mutating_state_transition_commits_atomically
+locking:
+  required:
+    - select_command_for_update_on_mutation
+idempotency:
+  required: true
+  scope: command_result_key_plus_request_hash
+queries:
+  semantic_steps:
+    - select_pending_commands
+    - pending_to_sent
+    - lock_and_acknowledge_command
+    - execution_to_running
+    - lock_and_apply_result
+    - execution_to_terminal_state
+    - record_execution_event
+invariants:
+  - duplicate_identical_result_returns_existing_terminal_command
+  - different_result_reusing_key_is_rejected
+  - command_cannot_complete_before_acknowledge
+  - command_has_at_most_one_terminal_result
+  - execution_state_matches_command_state
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request, transaction_duration, lock_wait]
+source_files:
+  - apps/api/app/application/target_payments.py
+  - apps/api/app/api/routes/target_payments.py

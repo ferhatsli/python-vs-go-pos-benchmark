@@ -1,0 +1,905 @@
+{
+  "count": 19,
+  "matrices": [
+    {
+      "evidence_class": "canonical",
+      "load_level": null,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 45.24143623010822,
+          "p95_values_ms": [
+            47.72393655,
+            47.74281444999999,
+            46.4441165,
+            51.9641461,
+            131.04422515,
+            92.35983624999999,
+            48.364920399999995,
+            51.719737899999984,
+            48.00944749999999,
+            52.0962494
+          ]
+        },
+        "load_level": null,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 16.299411778204558,
+          "p95_values_ms": [
+            493.98407915,
+            377.46474385,
+            434.95547235,
+            407.63898305,
+            395.53970834999996,
+            440.02940265,
+            385.4112572,
+            481.4839113,
+            365.15797864999996,
+            600.5363269999999
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "command-lifecycle",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "command-lifecycle",
+      "source": "results/track-a-20260831/D1/command-lifecycle/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": null,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 14.988817107731228,
+          "p95_values_ms": [
+            22.7462965,
+            18.973253,
+            17.6706998,
+            19.940140599999992,
+            17.821087399999993,
+            18.22558735,
+            18.262456399999994,
+            24.88727,
+            15.16931425,
+            16.798888799999997
+          ]
+        },
+        "load_level": null,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 18.793001778964054,
+          "p95_values_ms": [
+            343.56542949999994,
+            307.93690310000005,
+            410.35405000000003,
+            303.34502079999953,
+            297.76264920000006,
+            283.7731679500001,
+            235.5716119,
+            222.22323649999922,
+            244.47956925,
+            289.02255249999996
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "configuration",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "configuration",
+      "source": "results/track-a-20260831/D1/configuration/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 50,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 4.643385659830571,
+          "p95_values_ms": [
+            79.07297829999997,
+            78.73916959999998,
+            80.66671224999999,
+            78.5543695,
+            88.6162763,
+            79.82880019999998,
+            85.8132938,
+            78.29129679999998,
+            78.02967339999998,
+            84.88623559999996
+          ]
+        },
+        "load_level": 50,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 13.139330770041132,
+          "p95_values_ms": [
+            390.21742300000005,
+            355.7157446,
+            305.24869325,
+            424.268904,
+            405.69950194999984,
+            438.10511569999994,
+            380.5070367999999,
+            331.1826150000001,
+            349.8680465,
+            467.61891245
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "dashboard",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "dashboard",
+      "source": "results/track-a-20260831/D1/dashboard-level-50/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 17,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 21.491518029655296,
+          "p95_values_ms": [
+            4.8537085,
+            8.6301115,
+            6.262532999999989,
+            9.63731,
+            9.162795,
+            7.3771265,
+            8.685307,
+            8.309810500000001,
+            5.7521235,
+            6.420426
+          ]
+        },
+        "load_level": 17,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 9.353161189157921,
+          "p95_values_ms": [
+            11.562563299999995,
+            10.336734,
+            12.507935599999998,
+            12.5660519,
+            11.344619749999998,
+            11.8404445,
+            11.0853325,
+            11.836542000000001,
+            11.71000599999999,
+            8.9773935
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "heartbeat",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "heartbeat",
+      "source": "results/track-a-20260831/D1/heartbeat-level-17/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 100,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 1.6864815236298099,
+          "p95_values_ms": [
+            155.9170478,
+            157.13493479999997,
+            156.0126295,
+            155.71400935,
+            154.1947361,
+            151.26433889999996,
+            156.78520799999998,
+            152.874083,
+            149.54392945,
+            156.8831105
+          ]
+        },
+        "load_level": 100,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 16.639189914428123,
+          "p95_values_ms": [
+            2199.9794875999996,
+            2963.7370661499954,
+            2145.563805999999,
+            3151.8548661,
+            3131.3070770000018,
+            3171.3134760000003,
+            3059.6943656500002,
+            2225.551156999999,
+            2956.5421806000018,
+            2254.1862066999997
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "payment-card",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "payment-card",
+      "source": "results/track-a-20260831/D1/payment-card-level-100/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": null,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 47.549215331784815,
+          "p95_values_ms": [
+            788.0817478499999,
+            2235.9769463499997,
+            1014.5396395,
+            1154.74538155,
+            935.5017965,
+            809.56757225,
+            727.1995497500001,
+            2254.0424746000003,
+            1034.6938409499999,
+            994.9174003
+          ]
+        },
+        "load_level": null,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 20.37674257324596,
+          "p95_values_ms": [
+            2340.7300948,
+            3813.4881228,
+            2452.91766435,
+            2132.345987,
+            2383.2047569,
+            2451.27645365,
+            2332.2710288,
+            2188.5965957,
+            2312.65768835,
+            3135.0097205
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "payment-qr-contention",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "payment-qr-contention",
+      "source": "results/track-a-20260831/D1/payment-qr-contention/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": null,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 26.080172654344093,
+          "p95_values_ms": [
+            974.4607113000001,
+            989.68623415,
+            821.1431609499999,
+            668.4913590499999,
+            716.0916252,
+            672.10382895,
+            696.6593891,
+            856.0534406,
+            1415.2549115999998,
+            1005.98697315
+          ]
+        },
+        "load_level": null,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 17.942873182740218,
+          "p95_values_ms": [
+            1821.1660454,
+            2440.1929908,
+            1973.9551741999999,
+            3250.3956314999996,
+            2366.1863716999997,
+            1974.05663,
+            1967.47427075,
+            2267.7982809,
+            2281.27014585,
+            2475.75035495
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "payment-rf-contention",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "payment-rf-contention",
+      "source": "results/track-a-20260831/D1/payment-rf-contention/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 500,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 14.00220554751076,
+          "p95_values_ms": [
+            231.04839,
+            297.591227,
+            224.618109,
+            286.97626,
+            226.525382,
+            323.325277,
+            230.771238,
+            227.40358,
+            266.591802,
+            240.006709
+          ]
+        },
+        "load_level": 500,
+        "profile": "D1",
+        "python": {
+          "count": 10,
+          "cv_percent": 29.752941367134554,
+          "p95_values_ms": [
+            255.58226904831827,
+            417.0878690201789,
+            297.5640702061355,
+            475.30741104856133,
+            537.6537640113384,
+            408.87331892736256,
+            307.5709429103881,
+            281.08204319141805,
+            272.4857449065894,
+            232.8103280160576
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "worker",
+        "status": "UNSTABLE"
+      },
+      "profile": "D1",
+      "scenario": "worker",
+      "source": "results/track-a-20260831/D1/worker-level-500/matrix-summary.json",
+      "status": "UNSTABLE",
+      "worker_devices": 500,
+      "worker_source": "results/track-a-20260831/D1/worker-level-500/python/measured-1/worker-summary.json"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": null,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 17.060673292417533,
+          "p95_values_ms": [
+            23.757575000000003,
+            14.916430500000002,
+            19.995931399999982,
+            15.636999999999988,
+            17.436652599999988,
+            19.115879999999983,
+            16.807685549999995,
+            17.18912954999999,
+            14.223149699999997,
+            14.400432050000001
+          ]
+        },
+        "load_level": null,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 14.284091986969141,
+          "p95_values_ms": [
+            293.75156675,
+            312.54116189999985,
+            286.20394225,
+            362.6045118,
+            355.19622299999975,
+            262.98747249999997,
+            275.44053779999996,
+            260.3568674,
+            273.8380958499998,
+            231.0738307999999
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "configuration",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "configuration",
+      "source": "results/track-a-20260831/D2/configuration/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 100,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 4.042477256773163,
+          "p95_values_ms": [
+            179.71923479999998,
+            174.6089898,
+            198.774745,
+            179.99818159999998,
+            184.5290005,
+            190.7022115,
+            177.6874225,
+            177.97778649999998,
+            179.239088,
+            177.75201985
+          ]
+        },
+        "load_level": 100,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 17.735665165838906,
+          "p95_values_ms": [
+            1509.3061505999983,
+            1654.44440735,
+            1060.0413981999998,
+            1374.9636325000001,
+            1172.1194134499997,
+            1189.0611314,
+            1073.4422120000002,
+            1575.9094055999992,
+            1456.4104356999958,
+            1029.5220112499999
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "dashboard",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "dashboard",
+      "source": "results/track-a-20260831/D2/dashboard-level-100/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 50,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 3.1516170562729586,
+          "p95_values_ms": [
+            97.61537325,
+            92.62780599999999,
+            95.48729900000001,
+            89.6808853,
+            93.0638194,
+            98.1957472,
+            91.45309579999999,
+            91.5645898,
+            94.8583347,
+            90.356369
+          ]
+        },
+        "load_level": 50,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 18.61781500256661,
+          "p95_values_ms": [
+            263.84551765,
+            311.33516314999997,
+            326.424099,
+            330.2824801000001,
+            354.2251599499999,
+            449.99129439999996,
+            386.0777711999999,
+            301.7792851999995,
+            257.230377,
+            265.14902464999983
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "dashboard",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "dashboard",
+      "source": "results/track-a-20260831/D2/dashboard-level-50/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 167,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 79.88009450844784,
+          "p95_values_ms": [
+            9.382296499999999,
+            24.9443035,
+            5.791291,
+            4.395987000000002,
+            4.2112545,
+            5.6155375,
+            6.256361,
+            14.649046200000043,
+            4.901178,
+            3.5460225000000003
+          ]
+        },
+        "load_level": 167,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 112.9249360629123,
+          "p95_values_ms": [
+            6913.65569400001,
+            5543.708705,
+            7397.169331599999,
+            771.4331099999999,
+            503.15268249999997,
+            828.3933409000011,
+            785.4214895,
+            546.5832665,
+            523.7937995,
+            1577.8532905000018
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "heartbeat",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "heartbeat",
+      "source": "results/track-a-20260831/D2/heartbeat-level-167/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 100,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 22.770957020976603,
+          "p95_values_ms": [
+            309.97025455,
+            218.0449864499999,
+            189.458554,
+            199.057142,
+            177.69228475,
+            171.79258405,
+            275.1399248,
+            169.37775929999998,
+            181.7952594,
+            188.71520049999998
+          ]
+        },
+        "load_level": 100,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 20.714190804221,
+          "p95_values_ms": [
+            5000.8764636,
+            3253.6010834999997,
+            3288.1107177499994,
+            3887.65392,
+            3820.5732308499983,
+            2495.9493499999994,
+            3157.093545,
+            3150.9252823999996,
+            2686.8465564999997,
+            3285.837705299999
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "payment-card",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "payment-card",
+      "source": "results/track-a-20260831/D2/payment-card-level-100/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 250,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 23.81554760739461,
+          "p95_values_ms": [
+            385.92864399999996,
+            364.1545479999999,
+            499.06392344999995,
+            428.19098955,
+            343.4334722,
+            461.2234761999998,
+            553.9179872999885,
+            708.6483481999999,
+            381.14982059999994,
+            468.17893604999995
+          ]
+        },
+        "load_level": 250,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 13.628216912909071,
+          "p95_values_ms": [
+            6628.817232549998,
+            7144.386211650001,
+            7469.643998699994,
+            6452.625351149995,
+            7525.923903399998,
+            8430.6661666,
+            9664.7124838,
+            8711.325956,
+            8293.07840419999,
+            9240.5796322
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "payment-card",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "payment-card",
+      "source": "results/track-a-20260831/D2/payment-card-level-250/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 500,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 25.43881218484237,
+          "p95_values_ms": [
+            1226.429638299998,
+            939.5386817499998,
+            768.4156925999991,
+            669.6032529999998,
+            1156.1711582,
+            1488.1229724,
+            883.5088834000001,
+            915.5031906999998,
+            749.1983123999998,
+            1014.7210530999997
+          ]
+        },
+        "load_level": 500,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 14.754259386769316,
+          "p95_values_ms": [
+            15782.267366399998,
+            15688.303284199998,
+            14409.823101400001,
+            12685.927487999996,
+            13763.836800499994,
+            14197.598496099932,
+            15630.235364649994,
+            19547.50913269999,
+            19490.210417399998,
+            17662.514000649997
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "payment-card",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "payment-card",
+      "source": "results/track-a-20260831/D2/payment-card-level-500/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": "dataset",
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 16.419177242439005,
+          "p95_values_ms": [
+            951.226385,
+            1146.372184,
+            1179.320324,
+            1250.853218,
+            1092.76039,
+            1458.986102,
+            1008.627259,
+            1276.251652,
+            1477.828777,
+            925.394169
+          ]
+        },
+        "load_level": null,
+        "profile": "D2",
+        "python": {
+          "count": 10,
+          "cv_percent": 41.565398871383074,
+          "p95_values_ms": [
+            2127.9377948958427,
+            4801.195251988247,
+            1665.8798980060965,
+            1679.4869739096612,
+            2089.271717937663,
+            2493.5408579185605,
+            2169.7001338470727,
+            2866.879289969802,
+            3718.6529578175396,
+            1462.3880321159959
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "worker",
+        "status": "UNSTABLE"
+      },
+      "profile": "D2",
+      "scenario": "worker",
+      "source": "results/track-a-20260831/D2/worker/matrix-summary.json",
+      "status": "UNSTABLE",
+      "worker_devices": 5000,
+      "worker_source": "results/track-a-20260831/D2/worker/python/measured-1/worker-summary.json"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 100,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 25.134979608909408,
+          "p95_values_ms": [
+            486.2191043499996,
+            389.88458249999996,
+            410.57030675,
+            496.973473,
+            723.1327293999998,
+            654.860194,
+            710.856663,
+            723.4385556,
+            395.69794715,
+            527.18853855
+          ]
+        },
+        "load_level": 100,
+        "profile": "D3",
+        "python": {
+          "count": 10,
+          "cv_percent": 21.467107727021638,
+          "p95_values_ms": [
+            3238.9776488999987,
+            2060.2101830499987,
+            1921.4843755000002,
+            3137.5384632999994,
+            2367.4361504999997,
+            2753.1045029999996,
+            2544.4716423999994,
+            2069.1442067999997,
+            3152.359827,
+            1840.3476177
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "dashboard",
+        "status": "UNSTABLE"
+      },
+      "profile": "D3",
+      "scenario": "dashboard",
+      "source": "results/track-a-20260831/D3/dashboard-level-100/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": 200,
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 15.153728101298533,
+          "p95_values_ms": [
+            880.40228395,
+            988.87673765,
+            1050.3012663,
+            908.4439831999999,
+            1126.3869925499998,
+            890.47376885,
+            879.915864,
+            1165.2164078499993,
+            704.39870315,
+            810.8278966999999
+          ]
+        },
+        "load_level": 200,
+        "profile": "D3",
+        "python": {
+          "count": 10,
+          "cv_percent": 11.095205096758098,
+          "p95_values_ms": [
+            3629.8960644999997,
+            4205.969380799997,
+            4640.715015149998,
+            4188.689879,
+            4547.420433099997,
+            4741.514174799997,
+            5192.676343,
+            4036.5096949999997,
+            3827.264648,
+            3962.6449141999906
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "dashboard",
+        "status": "UNSTABLE"
+      },
+      "profile": "D3",
+      "scenario": "dashboard",
+      "source": "results/track-a-20260831/D3/dashboard-level-200/matrix-summary.json",
+      "status": "UNSTABLE"
+    },
+    {
+      "evidence_class": "canonical",
+      "load_level": "dataset",
+      "matrix": {
+        "go": {
+          "count": 10,
+          "cv_percent": 21.905854688400574,
+          "p95_values_ms": [
+            10798.648139,
+            13740.353845,
+            11066.965576,
+            8028.405877,
+            8825.066514,
+            9499.791814,
+            8876.812488,
+            9069.040176,
+            13553.380017,
+            14558.261617
+          ]
+        },
+        "load_level": null,
+        "profile": "D3",
+        "python": {
+          "count": 10,
+          "cv_percent": 21.376677295134535,
+          "p95_values_ms": [
+            37182.726240949705,
+            26815.76228281483,
+            28796.71489703469,
+            24629.60421992466,
+            33181.91542290151,
+            27184.917987091467,
+            24184.60892699659,
+            23533.91679516062,
+            36224.41333299503,
+            18252.07627285272
+          ]
+        },
+        "run_id": "track-a-20260831",
+        "scenario": "worker",
+        "status": "UNSTABLE"
+      },
+      "profile": "D3",
+      "scenario": "worker",
+      "source": "results/track-a-20260831/D3/worker/matrix-summary.json",
+      "status": "UNSTABLE",
+      "worker_devices": 50000,
+      "worker_source": "results/track-a-20260831/D3/worker/python/measured-1/worker-summary.json"
+    }
+  ],
+  "run_id": "track-a-20260831"
+}

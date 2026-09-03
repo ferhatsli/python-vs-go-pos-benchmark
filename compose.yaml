@@ -1,0 +1,133 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    command:
+      - postgres
+      - -c
+      - shared_preload_libraries=pg_stat_statements
+      - -c
+      - track_io_timing=on
+      - -c
+      - pg_stat_statements.track=all
+    environment:
+      POSTGRES_DB: pos_benchmark
+      POSTGRES_USER: benchmark
+      POSTGRES_PASSWORD: benchmark-local-only
+    ports:
+      - "${BENCH_POSTGRES_PORT:-45432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U benchmark -d pos_benchmark"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    cpus: 4.0
+    mem_limit: 4g
+    volumes:
+      - benchmark_pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:8-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    ports:
+      - "${BENCH_REDIS_PORT:-46379}:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    cpus: 0.5
+    mem_limit: 256m
+
+  python-api:
+    build:
+      context: ./python
+    working_dir: /workspace
+    environment:
+      BENCH_DATABASE_URL: postgresql+asyncpg://benchmark:benchmark-local-only@postgres:5432/pos_benchmark
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "${BENCH_PYTHON_PORT:-48000}:8000"
+    cpus: 2.0
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2)"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  python-worker:
+    build:
+      context: ./python
+    working_dir: /workspace
+    environment:
+      BENCH_DATABASE_URL: postgresql+asyncpg://benchmark:benchmark-local-only@postgres:5432/pos_benchmark
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["python", "-m", "app.worker_cli"]
+    cpus: 2.0
+    mem_limit: 1g
+
+  python-test:
+    build:
+      context: ./python
+    working_dir: /workspace
+    environment:
+      BENCH_DATABASE_URL: postgresql+asyncpg://benchmark:benchmark-local-only@postgres:5432/pos_benchmark
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./python:/workspace
+    command: ["python", "-m", "pytest", "-q"]
+
+  go-api:
+    build:
+      context: ./go
+    environment:
+      BENCH_DATABASE_URL: postgres://benchmark:benchmark-local-only@postgres:5432/pos_benchmark
+      BENCH_HTTP_ADDR: 0.0.0.0:8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "${BENCH_GO_PORT:-48001}:8000"
+    cpus: 2.0
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD", "/api", "-healthcheck"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  go-worker:
+    build:
+      context: ./go
+    entrypoint: ["/worker"]
+    environment:
+      BENCH_DATABASE_URL: postgres://benchmark:benchmark-local-only@postgres:5432/pos_benchmark
+    depends_on:
+      postgres:
+        condition: service_healthy
+    cpus: 2.0
+    mem_limit: 1g
+
+  go-test:
+    image: golang:1.27.0
+    working_dir: /workspace
+    environment:
+      BENCH_DATABASE_URL: postgres://benchmark:benchmark-local-only@postgres:5432/pos_benchmark
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./go:/workspace
+      - go_mod_cache:/go/pkg/mod
+    command: ["go", "test", "./..."]
+
+volumes:
+  benchmark_pgdata:
+  go_mod_cache:

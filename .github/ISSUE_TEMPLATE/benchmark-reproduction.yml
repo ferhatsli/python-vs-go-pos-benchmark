@@ -1,0 +1,56 @@
+name: Benchmark reproduction issue
+description: Report a reproducibility problem or materially different benchmark result.
+title: "[reproduction] "
+labels:
+  - reproduction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please include only the information needed to reproduce the benchmark issue. Do not attach credentials or private production data.
+  - type: input
+    id: os
+    attributes:
+      label: OS / architecture
+      placeholder: Ubuntu 24.04 x86_64
+    validations:
+      required: true
+  - type: input
+    id: docker
+    attributes:
+      label: Docker version
+      placeholder: Docker 29.x / Compose v5.x
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Benchmark run command
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: Profile / scenario / load
+      placeholder: D2 / payment-card / 250
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected comparison
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs from the failing run only
+      description: Remove secrets, host-specific private paths, and unrelated logs before posting.
+      render: text

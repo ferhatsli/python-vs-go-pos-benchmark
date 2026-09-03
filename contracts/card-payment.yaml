@@ -1,0 +1,42 @@
+version: 1
+workload: W3
+name: card_payment
+endpoint:
+  method: POST
+  path: /api/v1/device/payments
+transaction:
+  commit_count: 1
+  boundary: one_payment_transaction_through_event_record
+locking:
+  required:
+    - pg_advisory_xact_lock_on_device_and_idempotency_key
+idempotency:
+  required: true
+  scope: device_id_plus_key
+  request_hash_conflict: HTTP_409_IDEMPOTENCY_CONFLICT
+queries:
+  semantic_steps:
+    - advisory_transaction_lock
+    - idempotency_lookup
+    - device_state_and_operational_guards
+    - configuration_ack_guard
+    - wash_bay_busy_guard
+    - billing_entitlement_guard
+    - effective_station_program_resolution
+    - wash_bay_assignment_and_payment_method_guard
+    - insert_payment_transaction
+    - insert_payment_attempt
+    - insert_card_provider_transaction
+    - insert_start_right_on_success
+    - insert_payment_event
+invariants:
+  - same_key_same_request_returns_same_committed_payment
+  - same_key_different_request_is_rejected
+  - successful_payment_creates_exactly_one_start_right
+  - mock_provider_latency_is_not_part_of_track_a
+  - failed_or_cancelled_payment_never_creates_start_right
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request, transaction_duration, pool_wait, lock_wait, wal_bytes_per_second]
+source_files:
+  - apps/api/app/application/target_payments.py
+  - apps/api/app/api/routes/target_payments.py
+  - apps/api/app/domain/target/payments.py

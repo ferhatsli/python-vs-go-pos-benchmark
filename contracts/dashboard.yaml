@@ -1,0 +1,28 @@
+version: 1
+workload: W6
+name: dashboard_overview
+endpoint:
+  method: GET
+  path: /api/v1/dashboard/overview?period=TODAY
+transaction:
+  commit_count: 0
+  boundary: read_only
+locking:
+  required: []
+idempotency:
+  required: false
+queries:
+  semantic_steps:
+    - authenticate_panel_user
+    - resolve_authorized_scope
+    - aggregate_payment_and_device_operational_truth
+    - return_bounded_overview
+invariants:
+  - response_is_scope_safe
+  - aggregate_values_are_derived_from_same_dataset_snapshot
+  - cache_is_disabled_or_identical_for_both_runtimes
+  - response_is_bounded
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request, postgres_cpu]
+source_files:
+  - performance/phase11-authenticated-load.js
+  - docs/43-scale-performance-and-service-levels.md

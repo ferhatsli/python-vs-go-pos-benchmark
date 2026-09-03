@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700">
+<title>Dataset scale: D1 → D2 → D3</title>
+<desc>The synthetic dataset grows by two orders of magnitude while workload contracts stay fixed.</desc>
+<metadata>source_csv=docs/methodology.md</metadata>
+<rect width="1400" height="700" fill="#0B1117"/>
+<text x="70" y="72" fill="#EAF1F7" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Dataset scale: D1 → D2 → D3</text>
+<text x="70" y="108" fill="#A8B6C3" font-family="Arial,Helvetica,sans-serif" font-size="18">The synthetic dataset grows by two orders of magnitude while workload contracts stay fixed.</text>
+<rect x="70.0" y="185.0" width="370.0" height="330.0" rx="16" fill="#111B25"/>
+<rect x="70.0" y="185.0" width="370.0" height="9.0" rx="4" fill="#4B8BBE"/>
+<text x="98.0" y="235.0" fill="#4B8BBE" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">D1</text>
+<text x="98.0" y="330.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="700">500</text>
+<text x="98.0" y="380.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">devices</text>
+<text x="98.0" y="414.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">baseline scale</text>
+<rect x="510.0" y="185.0" width="370.0" height="330.0" rx="16" fill="#111B25"/>
+<rect x="510.0" y="185.0" width="370.0" height="9.0" rx="4" fill="#FFD43B"/>
+<text x="538.0" y="235.0" fill="#FFD43B" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">D2</text>
+<text x="538.0" y="330.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="700">5,000</text>
+<text x="538.0" y="380.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">devices</text>
+<text x="538.0" y="414.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">10× D1</text>
+<rect x="950.0" y="185.0" width="370.0" height="330.0" rx="16" fill="#111B25"/>
+<rect x="950.0" y="185.0" width="370.0" height="9.0" rx="4" fill="#00ADD8"/>
+<text x="978.0" y="235.0" fill="#00ADD8" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">D3</text>
+<text x="978.0" y="330.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="700">50,000</text>
+<text x="978.0" y="380.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">devices</text>
+<text x="978.0" y="414.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">5,000 stations</text>
+<text x="978.0" y="448.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">500 companies</text>
+<text x="978.0" y="482.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400">~1M payments</text>
+<line x1="440.0" y1="350.0" x2="510.0" y2="350.0" stroke="#263443" stroke-width="3"/>
+<polygon points="510.0,350.0 499.9,356.4 499.9,343.6" fill="#263443"/>
+<line x1="880.0" y1="350.0" x2="950.0" y2="350.0" stroke="#263443" stroke-width="3"/>
+<polygon points="950.0,350.0 939.9,356.4 939.9,343.6" fill="#263443"/>
+<text x="70.0" y="595.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">Dataset size is not the same thing as k6 VUs or arrival rate.</text>
+</svg>

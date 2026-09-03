@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<title>Benchmark architecture</title>
+<desc>The same load and data layer feed one active runtime at a time; metrics and correctness are captured around every trial.</desc>
+<metadata>source_csv=docs/architecture.md</metadata>
+<rect width="1400" height="760" fill="#0B1117"/>
+<text x="70" y="72" fill="#EAF1F7" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Benchmark architecture</text>
+<text x="70" y="108" fill="#A8B6C3" font-family="Arial,Helvetica,sans-serif" font-size="18">The same load and data layer feed one active runtime at a time; metrics and correctness are captured around every trial.</text>
+<rect x="70.0" y="235.0" width="230.0" height="170.0" rx="14" fill="#111B25"/>
+<rect x="70.0" y="235.0" width="8.0" height="170.0" rx="4" fill="#FFD43B"/>
+<text x="98.0" y="277.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Load</text>
+<text x="98.0" y="311.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">k6 HTTP workloads</text>
+<text x="98.0" y="339.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Worker runner</text>
+<text x="98.0" y="367.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">D1 / D2 / D3</text>
+<rect x="390.0" y="165.0" width="300.0" height="170.0" rx="14" fill="#111B25"/>
+<rect x="390.0" y="165.0" width="8.0" height="170.0" rx="4" fill="#4B8BBE"/>
+<text x="418.0" y="207.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Python stack</text>
+<text x="418.0" y="241.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">FastAPI + Uvicorn</text>
+<text x="418.0" y="269.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">SQLAlchemy async</text>
+<text x="418.0" y="297.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">asyncpg</text>
+<rect x="390.0" y="385.0" width="300.0" height="170.0" rx="14" fill="#111B25"/>
+<rect x="390.0" y="385.0" width="8.0" height="170.0" rx="4" fill="#00ADD8"/>
+<text x="418.0" y="427.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Go stack</text>
+<text x="418.0" y="461.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">net/http</text>
+<text x="418.0" y="489.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">pgx/v5</text>
+<text x="418.0" y="517.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">explicit SQL</text>
+<rect x="790.0" y="235.0" width="250.0" height="170.0" rx="14" fill="#111B25"/>
+<rect x="790.0" y="235.0" width="8.0" height="170.0" rx="4" fill="#4DD4AC"/>
+<text x="818.0" y="277.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Shared data</text>
+<text x="818.0" y="311.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">PostgreSQL 17</text>
+<text x="818.0" y="339.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Redis 8</text>
+<text x="818.0" y="367.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">same DB budget</text>
+<rect x="1120.0" y="235.0" width="220.0" height="170.0" rx="14" fill="#111B25"/>
+<rect x="1120.0" y="235.0" width="8.0" height="170.0" rx="4" fill="#A8B6C3"/>
+<text x="1148.0" y="277.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Evidence</text>
+<text x="1148.0" y="311.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">latency / rate</text>
+<text x="1148.0" y="339.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">CPU / RAM / DB</text>
+<text x="1148.0" y="367.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">invariants</text>
+<line x1="300.0" y1="320.0" x2="390.0" y2="250.0" stroke="#4B8BBE" stroke-width="3"/>
+<polygon points="390.0,250.0 385.9,261.3 378.1,251.1" fill="#4B8BBE"/>
+<line x1="300.0" y1="320.0" x2="390.0" y2="470.0" stroke="#00ADD8" stroke-width="3"/>
+<polygon points="390.0,470.0 379.3,464.6 390.3,458.0" fill="#00ADD8"/>
+<line x1="690.0" y1="250.0" x2="790.0" y2="315.0" stroke="#4B8BBE" stroke-width="3"/>
+<polygon points="790.0,315.0 778.0,314.9 785.0,304.1" fill="#4B8BBE"/>
+<line x1="690.0" y1="470.0" x2="790.0" y2="325.0" stroke="#00ADD8" stroke-width="3"/>
+<polygon points="790.0,325.0 789.5,337.0 779.0,329.7" fill="#00ADD8"/>
+<line x1="1040.0" y1="320.0" x2="1120.0" y2="320.0" stroke="#4DD4AC" stroke-width="3"/>
+<polygon points="1120.0,320.0 1109.9,326.4 1109.9,313.6" fill="#4DD4AC"/>
+<text x="70.0" y="640.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">Only one application runtime is active during a measured trial.</text>
+<text x="70.0" y="675.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400">Correctness is a hard gate: a faster invalid financial result is not accepted.</text>
+</svg>

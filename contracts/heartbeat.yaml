@@ -1,0 +1,30 @@
+version: 1
+workload: W1
+name: heartbeat
+endpoint:
+  method: POST
+  path: /api/v1/device/heartbeat
+transaction:
+  commit_count: 1
+  boundary: authenticate_device_then_insert_heartbeat_and_upsert_current_state
+locking:
+  required: []
+idempotency:
+  required: false
+queries:
+  semantic_steps:
+    - select_active_device_credential
+    - select_device
+    - insert_device_heartbeat
+    - select_or_insert_device_current_state
+    - update_device_current_state
+invariants:
+  - invalid_device_credential_is_rejected
+  - accepted_heartbeat_persists_raw_row
+  - accepted_heartbeat_updates_current_last_seen_app_version_and_state
+  - accepted_response_contains_next_heartbeat_seconds
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request, wal_bytes_per_second]
+source_files:
+  - apps/api/app/application/target_catalog_devices.py
+  - apps/api/app/api/routes/target_catalog_devices.py
+  - apps/api/app/domain/target/devices.py

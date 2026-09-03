@@ -1,0 +1,4 @@
+profile,devices,python_duration_ms,go_duration_ms,python_devices_per_sec,go_devices_per_sec,python_overrun_5s,go_overrun_5s,status
+D1,500,302.567507,235.52755,1652.975802,2123.661968,false,false,UNSTABLE
+D2,5000,2148.818964,1162.846254,2327.079329,4300.657724,false,false,UNSTABLE
+D3,50000,27000.340135,10149.219977,1851.915068,4946.74122,true,true,UNSTABLE

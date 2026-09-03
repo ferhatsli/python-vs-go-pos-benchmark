@@ -1,0 +1,16 @@
+{
+  "frozen_source_commit": "271e4ee207aa56b4b9322376cd40fa76130ea6b7",
+  "protected_workload_count": 9,
+  "protected_workloads": {
+    "protected-workload-01": "a5baca0ff7052566b0d82a01717754627445e5a8d435949c22e3bedd54dc0246",
+    "protected-workload-02": "070705593afa17932c06fdc5e12165d8f3d1eddc03d35372c80d3dd90939928a",
+    "protected-workload-03": "6e10259e60e7a228c984f5da5452cbc09de94f93e7b1ee19b7a838efb4ac3ea4",
+    "protected-workload-04": "bc90825781cd2b72135f9dd242d7e6a07e47e237937f6924afb02c9de8d5ad12",
+    "protected-workload-05": "e3d0c72524a5a9627a2951e08468b838de1b59c1be6b1ec2312dba07329f27c7",
+    "protected-workload-06": "07cabf93c3936ab0c635a6b75e2ed3f45b2f05b972545f74374452f3224fa66a",
+    "protected-workload-07": "8c0fed0f6789919656adaf9df8e18f1359d8cdcde9117752f196a8848e5cc461",
+    "protected-workload-08": "8201c4c217d4b9dfda59404cb38d6eb8d82a8074863d5c9d9bd6b16192873631",
+    "protected-workload-09": "e583c4e42e1bf18d0ad08f4b6843cac2d66711d7068c38d922df0519a69c2076"
+  },
+  "statement": "Historical provenance only: the private source repository is not required or disclosed by the public reproduction mode."
+}

@@ -1,0 +1,28 @@
+version: 1
+workload: W2
+name: device_configuration
+endpoint:
+  method: GET
+  path: /api/v1/device/configuration
+transaction:
+  commit_count: 0
+  boundary: read_only
+locking:
+  required: []
+idempotency:
+  required: false
+queries:
+  semantic_steps:
+    - select_active_device_credential
+    - select_device
+    - select_published_configuration
+invariants:
+  - invalid_device_credential_is_rejected
+  - published_configuration_is_scope_bound_to_device
+  - update_available_reflects_current_version
+  - response_preserves_version_checksum_and_snapshot
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request]
+source_files:
+  - apps/api/app/application/target_catalog_devices.py
+  - apps/api/app/api/routes/target_catalog_devices.py
+  - apps/api/app/domain/target/devices.py

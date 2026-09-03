@@ -1,0 +1,36 @@
+version: 1
+workload: W5
+name: rf_card_payment
+endpoint:
+  method: POST
+  path: /api/v1/device/payments
+transaction:
+  commit_count: 1
+  boundary: wallet_debit_ledger_payment_and_start_right_commit_together
+locking:
+  required:
+    - pg_advisory_xact_lock_on_device_and_idempotency_key
+    - select_rf_wallet_for_update
+idempotency:
+  required: true
+  scope: device_id_plus_key
+queries:
+  semantic_steps:
+    - payment_common_guards
+    - lookup_rf_card_by_uid_hash
+    - validate_card_scope_status_expiration_and_station_restrictions
+    - lock_wallet_row_for_update
+    - validate_balance
+    - decrement_wallet_and_increment_version
+    - insert_wallet_ledger_entry
+    - insert_payment_attempt_start_right_and_event
+invariants:
+  - balance_equal_to_one_purchase_funds_exactly_one_concurrent_request
+  - final_balance_is_never_negative
+  - exactly_one_successful_debit_ledger_entry_exists
+  - failed_insufficient_balance_request_does_not_debit_wallet
+  - wallet_version_advances_with_successful_debit
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request, transaction_duration, lock_wait, deadlocks]
+source_files:
+  - apps/api/app/application/target_payments.py
+  - apps/api/app/domain/target/cashier.py

@@ -1,0 +1,34 @@
+version: 1
+workload: W4
+name: qr_payment
+endpoint:
+  method: POST
+  path: /api/v1/device/payments
+transaction:
+  commit_count: 1
+  boundary: payment_and_qr_consumption_commit_together
+locking:
+  required:
+    - pg_advisory_xact_lock_on_device_and_idempotency_key
+    - select_qr_code_for_update
+idempotency:
+  required: true
+  scope: device_id_plus_key
+queries:
+  semantic_steps:
+    - payment_common_guards
+    - lookup_qr_by_token_hash
+    - lock_qr_row_for_update
+    - validate_scope_time_status_and_usage
+    - increment_usage_and_mark_used_at_limit
+    - insert_payment_attempt_redemption_start_right_and_event
+invariants:
+  - single_use_qr_has_at_most_one_successful_redemption
+  - concurrent_loser_never_creates_second_successful_payment
+  - qr_usage_count_never_exceeds_usage_limit
+  - qr_status_is_used_when_limit_is_reached
+  - qr_scope_company_station_program_is_preserved
+metrics: [p50, p95, p99, rps, cpu, rss, db_statements_per_request, transaction_duration, lock_wait, deadlocks]
+source_files:
+  - apps/api/app/application/target_payments.py
+  - apps/api/app/domain/target/cashier.py

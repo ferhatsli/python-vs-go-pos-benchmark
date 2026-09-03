@@ -1,0 +1,24 @@
+.env
+.isolation/
+__pycache__/
+.pytest_cache/
+.venv/
+results/*
+!results/.gitkeep
+*.pyc
+*.pyo
+*.prof
+*.pprof
+.DS_Store
+
+.worktrees/
+
+.publication-audit.json
+
+# Public compact benchmark evidence only
+!results/track-a-20260831/
+results/track-a-20260831/*
+!results/track-a-20260831/summary.json
+!results/track-a-20260831/report.md
+!results/track-a-20260831/evidence/
+!results/track-a-20260831/evidence/*.json

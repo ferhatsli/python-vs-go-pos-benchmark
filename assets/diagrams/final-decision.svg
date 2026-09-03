@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="690" viewBox="0 0 1400 690">
+<title>Track A decision</title>
+<desc>The evidence supports broader Go evaluation, not an automatic full rewrite.</desc>
+<metadata>source_csv=docs/decisions.md</metadata>
+<rect width="1400" height="690" fill="#0B1117"/>
+<text x="70" y="72" fill="#EAF1F7" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Track A decision</text>
+<text x="70" y="108" fill="#A8B6C3" font-family="Arial,Helvetica,sans-serif" font-size="18">The evidence supports broader Go evaluation, not an automatic full rewrite.</text>
+<rect x="110.0" y="185.0" width="1180.0" height="305.0" rx="18" fill="#111B25"/>
+<rect x="110.0" y="185.0" width="1180.0" height="10.0" rx="5" fill="#00ADD8"/>
+<text x="700.0" y="285.0" fill="#00ADD8" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="39" font-weight="700">EVALUATE_BROADER_GO_MIGRATION</text>
+<text x="700.0" y="350.0" fill="#EAF1F7" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400">Go materially wins many Track A comparisons while preserving tested correctness.</text>
+<text x="700.0" y="392.0" fill="#FFD43B" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700">But D3 Worker misses the &lt;5s target in both runtimes.</text>
+<text x="700.0" y="438.0" fill="#A8B6C3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">stronger candidate ≠ automatic full rewrite</text>
+<text x="700.0" y="575.0" fill="#EAF1F7" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700">Next engineering question: runtime choice vs architecture / query-count optimization.</text>
+</svg>

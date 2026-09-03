@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+<title>CARD payment p95 latency</title>
+<desc>Same database and resource limits; lower is better. Exact medians are labelled.</desc>
+<metadata>source_csv=assets/data/card-p95.csv</metadata>
+<rect width="1400" height="780" fill="#0B1117"/>
+<text x="70" y="72" fill="#EAF1F7" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">CARD payment p95 latency</text>
+<text x="70" y="108" fill="#A8B6C3" font-family="Arial,Helvetica,sans-serif" font-size="18">Same database and resource limits; lower is better. Exact medians are labelled.</text>
+<line x1="330.0" y1="145.0" x2="330.0" y2="690.0" stroke="#263443" stroke-width="1"/>
+<text x="330.0" y="720.0" fill="#A8B6C3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">0ms</text>
+<line x1="562.5" y1="145.0" x2="562.5" y2="690.0" stroke="#263443" stroke-width="1"/>
+<text x="562.5" y="720.0" fill="#A8B6C3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">4.03s</text>
+<line x1="795.0" y1="145.0" x2="795.0" y2="690.0" stroke="#263443" stroke-width="1"/>
+<text x="795.0" y="720.0" fill="#A8B6C3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">8.06s</text>
+<line x1="1027.5" y1="145.0" x2="1027.5" y2="690.0" stroke="#263443" stroke-width="1"/>
+<text x="1027.5" y="720.0" fill="#A8B6C3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">12.10s</text>
+<line x1="1260.0" y1="145.0" x2="1260.0" y2="690.0" stroke="#263443" stroke-width="1"/>
+<text x="1260.0" y="720.0" fill="#A8B6C3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">16.13s</text>
+<text x="70.0" y="195.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">D1 @ 100</text>
+<rect x="330.0" y="165.0" width="170.7" height="30.0" rx="6" fill="#4B8BBE"/>
+<rect x="330.0" y="207.0" width="9.0" height="30.0" rx="6" fill="#00ADD8"/>
+<text x="512.7" y="187.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Python 2.96s</text>
+<text x="351.0" y="229.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Go 156ms</text>
+<text x="1285.0" y="208.0" fill="#FFD43B" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">19.0× lower p95</text>
+<text x="70.0" y="320.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">D2 @ 100</text>
+<rect x="330.0" y="290.0" width="188.5" height="30.0" rx="6" fill="#4B8BBE"/>
+<rect x="330.0" y="332.0" width="10.9" height="30.0" rx="6" fill="#00ADD8"/>
+<text x="530.5" y="312.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Python 3.27s</text>
+<text x="352.9" y="354.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Go 189ms</text>
+<text x="1285.0" y="333.0" fill="#FFD43B" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">17.3× lower p95</text>
+<text x="70.0" y="445.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">D2 @ 250</text>
+<rect x="330.0" y="415.0" width="456.1" height="30.0" rx="6" fill="#4B8BBE"/>
+<rect x="330.0" y="457.0" width="25.6" height="30.0" rx="6" fill="#00ADD8"/>
+<text x="798.1" y="437.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Python 7.91s</text>
+<text x="367.6" y="479.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Go 445ms</text>
+<text x="1285.0" y="458.0" fill="#FFD43B" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">17.8× lower p95</text>
+<text x="70.0" y="570.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700">D2 @ 500</text>
+<rect x="330.0" y="540.0" width="902.9" height="30.0" rx="6" fill="#4B8BBE"/>
+<rect x="330.0" y="582.0" width="53.5" height="30.0" rx="6" fill="#00ADD8"/>
+<text x="1244.9" y="562.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Python 15.66s</text>
+<text x="395.5" y="604.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400">Go 928ms</text>
+<text x="1285.0" y="583.0" fill="#FFD43B" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">16.9× lower p95</text>
+</svg>

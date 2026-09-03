@@ -1,0 +1,31 @@
+version: 1
+workload: W8
+name: monitoring_worker_sweep
+endpoint:
+  method: INTERNAL
+  path: sweep_target_runtime
+transaction:
+  commit_count: 1
+  boundary: one_sweep_session_with_runtime_commits_as_frozen_source_defines
+locking:
+  required:
+    - preserve_frozen_source_locking_semantics
+idempotency:
+  required: true
+  scope: alarm_dedupe_and_worker_side_effects
+queries:
+  semantic_steps:
+    - activate_and_complete_maintenance_windows
+    - load_active_devices_and_current_state
+    - evaluate_device_offline_alarm_state
+    - aggregate_recent_execution_failures
+    - evaluate_station_connectivity_incidents
+    - execute_other_frozen_runtime_sweep_components
+invariants:
+  - alarm_dedupe_prevents_duplicate_open_alarm_for_same_key
+  - recovered_device_resolves_offline_alarm
+  - worker_retry_does_not_duplicate_idempotent_side_effects
+  - track_a_preserves_current_algorithmic_query_shape
+metrics: [sweep_duration, statements_per_sweep, devices_per_second, cpu, rss, lock_wait, alarm_evaluation_lag]
+source_files:
+  - apps/api/app/application/target_worker.py

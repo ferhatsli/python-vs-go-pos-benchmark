@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<title>D3 canonical capacity failures</title>
+<desc>Only retained canonical evidence is shown; diagnostic numbers are excluded from the public chart.</desc>
+<metadata>source_csv=assets/data/d3-capacity.csv</metadata>
+<rect width="1400" height="760" fill="#0B1117"/>
+<text x="70" y="72" fill="#EAF1F7" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">D3 canonical capacity failures</text>
+<text x="70" y="108" fill="#A8B6C3" font-family="Arial,Helvetica,sans-serif" font-size="18">Only retained canonical evidence is shown; diagnostic numbers are excluded from the public chart.</text>
+<rect x="55.0" y="145.0" width="1290.0" height="520.0" rx="12" fill="#111B25"/>
+<text x="85.0" y="231.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">Heartbeat @ 1,667</text>
+<text x="85.0" y="259.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Python canonical warmup</text>
+<rect x="350.0" y="205.0" width="774.3" height="34.0" rx="6" fill="#4B8BBE"/>
+<text x="362.0" y="229.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">p95 36.42s</text>
+<text x="350.0" y="281.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400">Achieved throughput: 112.6/s of 1,667/s target (6.8%)</text>
+<text x="350.0" y="313.0" fill="#FF6B6B" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400">HTTP error rate: 43.8% · dropped: 42,864</text>
+<text x="350.0" y="345.0" fill="#4DD4AC" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Correctness invariants: PASS · stop-escalation applied</text>
+<text x="85.0" y="441.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">CARD payment @ 1,000</text>
+<text x="85.0" y="469.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Python canonical warmup</text>
+<rect x="350.0" y="415.0" width="809.5" height="34.0" rx="6" fill="#4B8BBE"/>
+<text x="362.0" y="439.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">p95 38.08s</text>
+<text x="350.0" y="491.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400">Achieved throughput: 31.3/s of 1,000/s target (3.1%)</text>
+<text x="350.0" y="523.0" fill="#FF6B6B" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400">HTTP error rate: 41.2% · dropped: 0</text>
+<text x="350.0" y="555.0" fill="#4DD4AC" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Correctness invariants: PASS · stop-escalation applied</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<title>Worker: duration and device throughput</title>
+<desc>D3 evaluates 50,000 devices. Both runtimes miss the &lt;5s target even though Go is faster.</desc>
+<metadata>source_csv=assets/data/worker.csv</metadata>
+<rect width="1400" height="900" fill="#0B1117"/>
+<text x="70" y="72" fill="#EAF1F7" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Worker: duration and device throughput</text>
+<text x="70" y="108" fill="#A8B6C3" font-family="Arial,Helvetica,sans-serif" font-size="18">D3 evaluates 50,000 devices. Both runtimes miss the &lt;5s target even though Go is faster.</text>
+<rect x="55.0" y="140.0" width="1290.0" height="310.0" rx="12" fill="#111B25"/>
+<rect x="55.0" y="480.0" width="1290.0" height="330.0" rx="12" fill="#111B25"/>
+<text x="80.0" y="180.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Median worker duration</text>
+<text x="80.0" y="520.0" fill="#EAF1F7" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Devices evaluated per second</text>
+<text x="82.0" y="238.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">D1 · 500 devices</text>
+<rect x="300.0" y="210.0" width="9.9" height="24.0" rx="6" fill="#4B8BBE"/>
+<rect x="300.0" y="240.0" width="7.7" height="24.0" rx="6" fill="#00ADD8"/>
+<text x="1245.0" y="228.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">303ms / 236ms</text>
+<text x="82.0" y="310.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">D2 · 5,000 devices</text>
+<rect x="300.0" y="282.0" width="70.5" height="24.0" rx="6" fill="#4B8BBE"/>
+<rect x="300.0" y="312.0" width="38.1" height="24.0" rx="6" fill="#00ADD8"/>
+<text x="1245.0" y="300.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">2.15s / 1.16s</text>
+<text x="82.0" y="382.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">D3 · 50,000 devices</text>
+<rect x="300.0" y="354.0" width="885.7" height="24.0" rx="6" fill="#4B8BBE"/>
+<rect x="300.0" y="384.0" width="332.9" height="24.0" rx="6" fill="#00ADD8"/>
+<text x="1245.0" y="372.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">27.00s / 10.15s</text>
+<line x1="464.0" y1="195.0" x2="464.0" y2="438.0" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="472.0" y="205.0" fill="#FF6B6B" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">5s target</text>
+<text x="82.0" y="580.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">D1</text>
+<rect x="300.0" y="550.0" width="296.0" height="25.0" rx="6" fill="#4B8BBE"/>
+<rect x="300.0" y="582.0" width="380.2" height="25.0" rx="6" fill="#00ADD8"/>
+<text x="1245.0" y="569.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Python 1,653/s</text>
+<text x="1245.0" y="601.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Go 2,124/s</text>
+<text x="82.0" y="656.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">D2</text>
+<rect x="300.0" y="626.0" width="416.7" height="25.0" rx="6" fill="#4B8BBE"/>
+<rect x="300.0" y="658.0" width="770.0" height="25.0" rx="6" fill="#00ADD8"/>
+<text x="1245.0" y="645.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Python 2,327/s</text>
+<text x="1245.0" y="677.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Go 4,301/s</text>
+<text x="82.0" y="732.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">D3</text>
+<rect x="300.0" y="702.0" width="331.6" height="25.0" rx="6" fill="#4B8BBE"/>
+<rect x="300.0" y="734.0" width="885.7" height="25.0" rx="6" fill="#00ADD8"/>
+<text x="1245.0" y="721.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Python 1,852/s</text>
+<text x="1245.0" y="753.0" fill="#EAF1F7" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Go 4,947/s</text>
+<text x="80.0" y="850.0" fill="#A8B6C3" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400">Blue = Python/FastAPI · Cyan = Go</text>
+</svg>

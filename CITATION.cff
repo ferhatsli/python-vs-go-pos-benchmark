@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Python vs Go POS Backend Benchmark"
+message: "If you use or extend this benchmark, please cite the repository as software."
+type: software
+authors:
+  - family-names: "Taşlı"
+    given-names: "Ferhat"
+year: 2026
+license: MIT
+abstract: "A reproducible Python/FastAPI vs Go benchmark using production-inspired POS backend workloads."
