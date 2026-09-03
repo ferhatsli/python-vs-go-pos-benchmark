@@ -61,12 +61,18 @@ The old benchmark development history is therefore not required for the public r
 
 ## External publication status
 
-GitHub publication is live and verified. The Medium article has been transferred to an authenticated draft and is currently left on Medium's Story preview screen for the user's final review and manual publish action. LinkedIn remains pending until the Medium article has a verified live URL.
+GitHub and Medium publications are live and verified. The Medium article was published by the user after final preview review. LinkedIn launch copy is finalized with verified live URLs; LinkedIn publication remains pending.
 
 Verified GitHub URL:
 
 ```text
 https://github.com/ferhatsli/python-vs-go-pos-benchmark
+```
+
+Verified Medium URL:
+
+```text
+https://medium.com/@ferhatsli/python-vs-go-pos-backend-benchmark-results-from-500-to-50-000-devices-c5ce0218d7dd
 ```
 
 ## GitHub release
@@ -90,18 +96,18 @@ https://github.com/ferhatsli/python-vs-go-pos-benchmark
 - [x] Figure captions transferred to Medium draft
 - [x] Story preview metadata checked (title, preview image, 7 min read)
 - [x] GitHub CTA verified and linked
-- [ ] Final desktop article review by user
-- [ ] Mobile preview checked
-- [ ] User publishes Medium article
-- [ ] Live Medium URL recorded
+- [x] Final desktop article review by user
+- [x] Mobile published-article check completed
+- [x] User publishes Medium article
+- [x] Live Medium URL recorded
 
 ## LinkedIn release
 
 - [x] English launch-copy source prepared
 - [x] HTTPS-only live-link finalizer implemented and tested
-- [ ] Medium URL live
-- [ ] GitHub URL live
-- [ ] Finalized launch copy uses verified HTTPS links only
+- [x] Medium URL live
+- [x] GitHub URL live
+- [x] Finalized launch copy uses verified HTTPS links only
 - [ ] Mobile line breaks checked
 - [ ] Published post links verified
 
@@ -118,3 +124,16 @@ Topics: backend, benchmark, fastapi, go, k6, performance, pos, postgresql, pytho
 ```
 
 The GitHub README HTML/API response references the committed hero, CARD, Dashboard, Worker, and architecture assets. The dedicated 1280×640 social-preview PNG was uploaded through repository Settings. The live repository `og:image` resolves to GitHub's `repository-images.githubusercontent.com` surface, confirming the custom preview is active.
+
+
+### 2026-09-03 — Medium live verification
+
+```text
+Article: https://medium.com/@ferhatsli/python-vs-go-pos-backend-benchmark-results-from-500-to-50-000-devices-c5ce0218d7dd
+Title: Python vs Go POS Backend Benchmark: Results from 500 to 50,000 Devices
+Read time: 7 min
+Publication state: LIVE
+Figures verified: 5
+```
+
+The live article was checked in the authenticated Chrome session after publication. The canonical Medium URL was read from the page metadata. A mobile viewport check confirmed the article title, Worker section, and GitHub repository CTA remain present. LinkedIn launch copy was then finalized using the verified Medium and GitHub HTTPS URLs.
