@@ -61,7 +61,7 @@ The old benchmark development history is therefore not required for the public r
 
 ## External publication status
 
-GitHub publication is live and verified. Medium and LinkedIn remain pending because they require an authenticated browser publishing flow and must use verified live URLs rather than guessed links.
+GitHub publication is live and verified. The Medium article has been transferred to an authenticated draft and is currently left on Medium's Story preview screen for the user's final review and manual publish action. LinkedIn remains pending until the Medium article has a verified live URL.
 
 Verified GitHub URL:
 
@@ -76,7 +76,7 @@ https://github.com/ferhatsli/python-vs-go-pos-benchmark
 - [x] Description configured
 - [x] Topics configured
 - [x] MIT license detected on live GitHub
-- [ ] Social preview uploaded (1280×640)
+- [x] Social preview uploaded (1280×640)
 - [x] Live README images and relative links verified through the GitHub README HTML/API surface
 - [x] Live GitHub URL recorded
 
@@ -85,10 +85,14 @@ https://github.com/ferhatsli/python-vs-go-pos-benchmark
 - [x] English article source prepared
 - [x] Figure captions prepared in manuscript
 - [x] Figure alt text prepared in manuscript
-- [ ] Semantic title/subtitle/headings/code blocks transferred to Medium
-- [ ] Desktop preview checked
+- [x] Semantic title/headings/lists/code blocks transferred to Medium draft
+- [x] Five publication figures uploaded to Medium draft
+- [x] Figure captions transferred to Medium draft
+- [x] Story preview metadata checked (title, preview image, 7 min read)
+- [x] GitHub CTA verified and linked
+- [ ] Final desktop article review by user
 - [ ] Mobile preview checked
-- [ ] GitHub CTA verified
+- [ ] User publishes Medium article
 - [ ] Live Medium URL recorded
 
 ## LinkedIn release
@@ -113,4 +117,4 @@ License: MIT
 Topics: backend, benchmark, fastapi, go, k6, performance, pos, postgresql, python
 ```
 
-The GitHub README HTML/API response references the committed hero, CARD, Dashboard, Worker, and architecture assets. The dedicated 1280×640 social-preview PNG is committed at `assets/hero/github-social-preview.png`; uploading it in repository Settings remains the only incomplete GitHub presentation step.
+The GitHub README HTML/API response references the committed hero, CARD, Dashboard, Worker, and architecture assets. The dedicated 1280×640 social-preview PNG was uploaded through repository Settings. The live repository `og:image` resolves to GitHub's `repository-images.githubusercontent.com` surface, confirming the custom preview is active.
